@@ -13,23 +13,25 @@
         }
 
         .card {
-            width: 340px;
-            height: 480px;
-            background: rgb(2, 48, 8);
-            border-radius: 6px;
-            box-shadow: 1px 4px 4px #000;
-            display: inline-flex;
-            margin: 1%;
+            background-color: #333;
+            background-clip: border-box;
+            border: 1px solid rgba(0, 0, 0, .125);
+            border-radius: .25rem;
+            width: 514px;
         }
 
         .card:hover {
             box-shadow: 1px 1px 20px #000;
         }
 
-        .card h1 {
-            text-align: center;
+        .card img {
+            width: 514px;
+        }
+
+        .card-content h1,
+        .card-content h2 {
             color: #fff;
-            padding: 100px 80px;
+            padding: 16px;
         }
     </style>
 </head>
@@ -37,15 +39,13 @@
 <body>
 
     <div class="card">
-        <h1>Kartu A</h1>
-    </div>
-
-    <div class="card">
-        <h1>Kartu B</h1>
-    </div>
-
-    <div class="card">
-        <h1>Kartu C</h1>
+        <img src="boyandcat.png" alt="">
+        <div>
+            <div class="card-content">
+                <h1>H1 : Terima Kasih</h1>
+                <h2>H2 : Senang bisa saling memahami</h2>
+            </div>
+        </div>
     </div>
 
 </body>
